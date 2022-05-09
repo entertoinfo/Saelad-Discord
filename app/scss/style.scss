@@ -3,5 +3,84 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+@import 'media';
 
+body {
+  background-color: #292B2F;
+}
 
+.header {
+  background-color: #5865F2;
+
+  &__inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__list-item:nth-child(1) {
+    padding-right: 100px;
+  }
+
+  // плавное подчеркивание ссылки
+  &__list-link {
+    @extend %menu-text;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__list-item a::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    content: "";
+    transition: width 0.3s ease-out;
+  }
+
+  &__list-item a:hover:after,
+  &__list-item a:focus:after {
+    width: 100%;
+  }
+}
+
+.logo {
+  padding: 20px 0;
+}
+
+.footer {
+  background-color: rgba(24, 25, 28, 1);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    @extend %footer-text;
+    margin-bottom: 20px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__menu-title {
+    font-family: $whitney;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 7px;
+  }
+}

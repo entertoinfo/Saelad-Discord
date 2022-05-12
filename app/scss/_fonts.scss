@@ -24,3 +24,12 @@
   font-weight: bold;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'whitney-book';
+  src: url(../fonts/whitneybook.woff) format('woff'),
+  url(../fonts/whitneybook.woff2) format('woff2');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}

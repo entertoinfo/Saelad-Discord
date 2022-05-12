@@ -3,10 +3,10 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
-@import 'media';
 
-body {
-  background-color: #292B2F;
+main {
+  background: linear-gradient(150deg, rgba(41, 43, 47, 1) 56%, rgba(53, 1, 113, 1) 100%);
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -56,6 +56,73 @@ body {
   padding: 20px 0;
 }
 
+.server {
+  padding-bottom: 75px;
+
+  &__title {
+    font-family: 'whitney-bold';
+    font-size: 47px;
+    line-height: 54px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 70px;
+  }
+
+  &__invite-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-column-gap: 125px;
+    grid-row-gap: 100px;
+    place-items: center;
+  }
+
+  &__invite {
+    width: 250px;
+    height: 150px;
+  }
+
+  &__logo-container {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #1E2023;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__name-text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name-owner {
+    display: flex;
+    flex-direction: column;
+    @extend %text-font;
+    padding-top: 5px;
+  }
+
+  &__name-owner span {
+    opacity: 0.8;
+  }
+
+  &__setting{
+    height: 34px;
+    width: 90px;
+    background-color: #1E2023;
+    border-radius: 5px;
+    margin-top: 7px;
+    @extend %text-font;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .footer {
   background-color: rgba(24, 25, 28, 1);
 
@@ -65,7 +132,7 @@ body {
   }
 
   &__text {
-    @extend %footer-text;
+    @extend %text-font;
     margin-bottom: 20px;
   }
 
@@ -84,3 +151,6 @@ body {
     margin-bottom: 7px;
   }
 }
+
+
+@import 'media';

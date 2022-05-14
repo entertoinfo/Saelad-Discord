@@ -27,12 +27,38 @@
             <li class="menu__list-item"><a class="menu__list-link" href="#">Logout</a></li>
           </ul>
         </nav>
+
+        <!-- btn mobile navigation-->
+        <div class="cd-header">
+          <div class="nav__btn-wrapper">
+            <div class="nav-but-wrap">
+              <div class="menu-icon hover-target">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </header>
 
   <div class="wrapper">
     <main class="main">
+      <!-- mobile navigation -->
+      <div class="nav">
+        <div class="nav__content">
+          <ul class="nav__list">
+            <li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Main</a></li>
+            <li class="nav__list-item"><a href="#" class="hover-target">Commands</a></li>
+            <li class="nav__list-item"><a href="staff.html" class="hover-target">Staff</a></li>
+            <li class="nav__list-item"><a href="#" class="hover-target">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+      
       <section class="server">
         <div class="container">
           <div class="server__inner">
@@ -51,17 +77,17 @@
                 </div>
               {% endfor %} -->
               <!-- ! -->
-                                   <!-- ? -->
-                                   <div class="server__invite">
-                                    <div class="server__logo-container">
-                                      <img class="server__logo" src="images/server-avatar.png" alt="logo your server">
-                                    </div>
-                                    <div class="server__name-text">
-                                      <p class="server__name-owner">Name owner<span>Owner</span></p>
-                                      <a class="server__setting" href="#">settings</a>
-                                    </div>
-                                  </div>
-                                  <!-- <div class="server__invite">
+              <!-- ? -->
+              <div class="server__invite">
+                <div class="server__logo-container">
+                  <img class="server__logo" src="images/server-avatar.png" alt="logo your server">
+                </div>
+                <div class="server__name-text">
+                  <p class="server__name-owner">Name owner<span>Owner</span></p>
+                  <a class="server__setting" href="#">settings</a>
+                </div>
+              </div>
+              <!-- <div class="server__invite">
                                     <div class="server__logo-container">
                                       <img class="server__logo" src="images/server-avatar.png" alt="logo your server">
                                     </div>
@@ -146,9 +172,10 @@
             </div>
           </div>
         </div>
-  </div>
+ 
   </section>
   </main>
+</div>
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">

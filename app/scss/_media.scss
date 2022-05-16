@@ -1,3 +1,10 @@
+@media (max-width: 1150px){
+  .settings__grid-box{
+    grid-column-gap: 80px;
+    grid-row-gap: 80px;
+  }
+}
+
 @media (max-width: 800px) {
 
   .header__inner{
@@ -16,6 +23,10 @@
   }
   .cd-header{
     display: block;
+  }
+
+  .control__server-img{
+    margin-left: 0;
   }
 }
 

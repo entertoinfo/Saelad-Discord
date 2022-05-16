@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saeland Dashboard</title>
+  <link rel="shortcut icon" href="images/logo-saeland.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -15,7 +16,8 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item"><a class="menu__list-link" href="index.html">Main</a></li>
-            <li class="menu__list-item"><a class="menu__list-link" href="#">Commands</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" href="setting-dashboard.html">Commands</a></li>
+            <!--! изменить href для стриницы commands -->
           </ul>
         </nav>
         <a class="logo" href="index.html">
@@ -64,24 +66,25 @@
           <div class="server__inner">
             <div class="server__title">select server</div>
             <div class="server__invite-box">
-              {% for guild in mutual_guilds %}
+              <!-- {% for guild in mutual_guilds %}
                 <div class="server__invite">
                   <div class="server__logo-container">
                     <img class="server__logo" src="{{ guild.icon_url }}" alt="logo your server">
                   </div>
                   <div class="server__name-text">
                     <p class="server__name-owner">{{ guild.name }}<span>Owner</span></p>
+                    <img src="{{ guild.icon_url }}" onerror="this.onerror=null;this.src='/public/photo/error-server-avatar.png'" class="guild__icon" alt="Error loading images">  
                     <a class="server__setting" href="#">settings</a>
                   </div>
                 </div>
-              {% endfor %}
-              <!-- <div class="server__invite">
+              {% endfor %} -->
+              <div class="server__invite">
                 <div class="server__logo-container">
-                  <img class="server__logo" src="images/server-avatar.png" alt="logo your server">
+                  <img class="server__logo" src="images/error-server-avatar.png" alt="logo your server">
                 </div>
                 <div class="server__name-text">
-                  <p class="server__name-owner">Name owner<span>Owner</span></p>
-                  <a class="server__setting" href="#">settings</a> -->
+                  <p class="server__name-owner">Name owner<span>Name owner</span></p>
+                  <a class="server__setting" href="#">settings</a>
                 </div>
               </div>
             </div>

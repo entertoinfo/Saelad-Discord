@@ -6,8 +6,8 @@
 .profile {
 
   &__card {
-    max-width: 300px;
-    max-height: 350px;
+    width: 300px;
+    height: 330px;
     background-color: #18191C;
     border-radius: 5px;
   }
@@ -18,15 +18,24 @@
     line-height: 26px;
     font-weight: 700;
     color: #fff;
-    margin: 20px 15px;
+    margin: 20px 15px 0;
   }
 
   &__head-name span {
     color: #B9BBBE;
   }
 
+  &__head-about{
+    font-family: $whitney;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 13px;
+  }
+
   &__about {
-    margin: 0 15px;
+    margin: 5px 15px;
     border-top: 1px solid #4F545C;
   }
 
@@ -112,7 +121,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 25px;
+    margin-top: 25px;
   }
 
   &__link:not(:last-of-type){

@@ -25,7 +25,7 @@
     color: #B9BBBE;
   }
 
-  &__head-about{
+  &__head-about {
     font-family: $whitney;
     font-size: 16px;
     line-height: 17px;
@@ -57,7 +57,7 @@
     margin-bottom: 50px;
   }
 
-  .Luke-card {
+  &__card-luke {
     grid-column: 1 / 3;
   }
 
@@ -113,6 +113,15 @@
     font-weight: 500;
     color: #fff;
   }
+
+  &__card-damego {
+    height: 365px;
+  }
+
+  &__about-text-damego span {
+    font-family: 'whitney-bold';
+    font-weight: 700;
+  }
 }
 
 .social {
@@ -124,11 +133,11 @@
     margin-top: 25px;
   }
 
-  &__link:not(:last-of-type){
+  &__link:not(:last-of-type) {
     padding-right: 10px;
   }
 
-  &__link-img--vk{
+  &__link-img--vk {
     max-width: 22px;
   }
 }

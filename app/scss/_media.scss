@@ -5,6 +5,13 @@
   }
 }
 
+
+@media (max-width: 1000px){
+  .profile__grid-box{
+    grid-column-gap: 100px;
+  }
+}
+
 @media (max-width: 800px) {
 
   .header__inner{
@@ -27,6 +34,17 @@
 
   .control__server-img{
     margin-left: 0;
+  }
+}
+
+@media (max-width: 730px){
+
+  .profile__grid-box{
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 85px;
+  }
+  .profile__card-luke{
+    grid-column: 1 / 1;
   }
 }
 

@@ -62,8 +62,9 @@
         <div class="container">
           <div class="control__inner">
             <div class="control__server">
-              <img class="control__server-img" src="images/settings-server.jpg" alt="logo your server">
-              <p class="control__name-server">name server</p>
+              <img class="control__server-img" src="{{ guild.icon_url }}" alt="">
+              <img src="{{ guild.icon_url }}" onerror="this.onerror=null;this.src='images/settings-server.jpg'" class="guild__icon guild__icon-setting" alt="Error loading images">  
+              <p class="control__name-server">{{ guild.name }}</p>
             </div>
           </div>
         </div>

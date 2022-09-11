@@ -17,8 +17,7 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item"><a class="menu__list-link" href="index.html">Main</a></li>
-            <li class="menu__list-item"><a class="menu__list-link" href="setting-dashboard.html">Commands</a></li>
-            <!--! изменить href для стриницы commands -->
+            <li class="menu__list-item"><a class="menu__list-link" href="#">Commands</a></li>
           </ul>
         </nav>
         <a class="logo" href="index.html">
@@ -55,7 +54,7 @@
         <div class="nav__content">
           <ul class="nav__list">
             <li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Main</a></li>
-            <li class="nav__list-item"><a href="setting-dashboard.html" class="hover-target">Commands</a></li>
+            <li class="nav__list-item"><a href="#" class="hover-target">Commands</a></li>
             <li class="nav__list-item"><a href="staff.html" class="hover-target">Staff</a></li>
             <li class="nav__list-item"><a href="#" class="hover-target">Logout</a></li>
           </ul>
@@ -69,12 +68,12 @@
               <!-- {% for guild in mutual_guilds %}
                 <div class="server__invite">
                   <div class="server__logo-container">
-                    <img class="server__logo" src="{{ guild.icon_url }}" alt="logo your server">
+                    <img class="server__logo" src="{{ guild.icon_url }}" alt="">
+                    <img src="{{ guild.icon_url }}" onerror="this.onerror=null;this.src='images/error-server-avatar.png'" class="guild__icon" alt="Error loading images">  
                   </div>
                   <div class="server__name-text">
                     <p class="server__name-owner">{{ guild.name }}<span>Owner</span></p>
-                    <img src="{{ guild.icon_url }}" onerror="this.onerror=null;this.src='/public/photo/error-server-avatar.png'" class="guild__icon" alt="Error loading images">  
-                    <a class="server__setting" href="#">settings</a>
+                    <a class="server__setting" href="setting-dashboard.html">settings</a>
                   </div>
                 </div>
               {% endfor %} -->
@@ -83,7 +82,43 @@
                   <img class="server__logo" src="images/error-server-avatar.png" alt="logo your server">
                 </div>
                 <div class="server__name-text">
-                  <p class="server__name-owner">Server Name<span>server name</span></p>
+                  <p class="server__name-owner">Server Name<span>server own</span></p>
+                  <a class="server__setting" href="#">settings</a>
+                </div>
+              </div>
+              <div class="server__invite">
+                <div class="server__logo-container">
+                  <img class="server__logo" src="images/error-server-avatar.png" alt="logo your server">
+                </div>
+                <div class="server__name-text">
+                  <p class="server__name-owner">Server Name<span>server own</span></p>
+                  <a class="server__setting" href="#">settings</a>
+                </div>
+              </div>
+              <div class="server__invite">
+                <div class="server__logo-container">
+                  <img class="server__logo" src="images/error-server-avatar.png" alt="logo your server">
+                </div>
+                <div class="server__name-text">
+                  <p class="server__name-owner">Server Name<span>server own</span></p>
+                  <a class="server__setting" href="#">settings</a>
+                </div>
+              </div>
+              <div class="server__invite">
+                <div class="server__logo-container">
+                  <img class="server__logo" src="images/error-server-avatar.png" alt="logo your server">
+                </div>
+                <div class="server__name-text">
+                  <p class="server__name-owner">Server Name<span>server own</span></p>
+                  <a class="server__setting" href="#">settings</a>
+                </div>
+              </div>
+              <div class="server__invite">
+                <div class="server__logo-container">
+                  <img class="server__logo" src="images/error-server-avatar.png" alt="logo your server">
+                </div>
+                <div class="server__name-text">
+                  <p class="server__name-owner">Server Name<span>server own</span></p>
                   <a class="server__setting" href="#">settings</a>
                 </div>
               </div>
